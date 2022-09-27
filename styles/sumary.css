@@ -121,6 +121,10 @@
         padding: 25px;
     }
 
+}
+
+/* Media for mobile */
+@media  screen and (max-width: 390px) {
     .card-title{
         font-size: 0.9em;
         margin-bottom: 10px;
@@ -133,6 +137,11 @@
     }
 
     .experience-layout h1{
+        font-size: 0.989rem;
+    }
+
+    .experience-layout h2{
         font-size: 0.9rem;
     }
+
 }
