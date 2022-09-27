@@ -1,0 +1,49 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing:border-box;
+}
+
+@font-face {
+    font-family:'Josefin Sans Bold';
+    src: url('../fonts/JosefinSans-Bold.ttf');
+}
+@font-face {
+    font-family: 'Josefin Sans Regular';
+    src: url('../fonts/JosefinSans-Regular.ttf');
+}
+@font-face {
+    font-family: 'Josefin Sans Light';
+    src: url('../fonts/JosefinSans-Light.ttf');
+}
+@font-face {
+    font-family: 'Josefin Sans Medium';
+    src: url('../fonts/JosefinSans-Medium.ttf');
+}
+@font-face {
+    font-family: 'Josefin Sans SemiBoldItalic';
+    src: url('../fonts/JosefinSans-SemiBoldItalic.ttf');
+}
+
+:root {
+    --textColor: #fff;
+    --backgroundColor:#060A10;
+
+    --josefin-bold: 'Josefin Sans Bold';
+    --josefin-regular: 'Josefin Sans Regular';
+    --josefin-light: 'Josefin Sans Light';
+    --josefin-medium: 'Josefin Sans Medium';
+    --josefin-semiBoldItalic: 'Josefin Sans SemiBoldItalic';
+}
+
+
+body{
+    background: linear-gradient(217deg, rgba(255, 34, 34, 0.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(55, 0, 63, 0.883), rgba(114, 28, 120, 0) 70.71%),
+            linear-gradient(336deg, rgba(255, 125, 4, 0.8), rgba(0,0,255,0) 70.71%);
+}
+
+section, header,footer {
+    max-width: 1200px;
+    margin: 0 auto;
+}

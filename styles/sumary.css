@@ -1,0 +1,106 @@
+.section-sumary{
+    margin-top: 2%;
+    background: var(--backgroundColor);
+    border-radius: 30px;
+    padding: 25px 25px 25px 25px;
+}
+.layout-area{
+    display: grid;
+    grid-template-areas:    "sumary  skills"
+                            "sumary  skills"
+                            "sumary  skills"
+                            "education  education";
+    color: #fff;
+    font-family: var(--josefin-regular);
+
+}
+
+.sumary{
+    grid-area: sumary;
+}
+.skills{
+    grid-area: skills;
+}
+.education{
+    grid-area: education;
+}
+
+.sumary,
+.skills,
+.education{
+    background-color: #1D1E24;
+    margin: 5px 2px 5px 8px;
+    padding: 25px;
+    border-radius: 30px;
+}
+
+.card-title{
+    font-family: var(--josefin-bold);
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.card-body{
+    border-bottom: 1px solid #fff;
+    margin-bottom: 15px;
+}
+
+.card-body p{
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    text-align: justify;
+    line-height : 25px;
+    font-family: var(--josefin-medium);
+}
+
+.experience-layout{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.experience-layout span{
+    font-size: 12px;
+    font-family: var( --josefin-semiBoldItalic);
+}
+
+.experience-layout span{
+    font-size: 12px;
+    font-family: var( --josefin-light);
+}
+
+.experience-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.card-tags span{
+    font-size: 15px;
+    font-family: var( --josefin-bold);
+    border-radius: 10px;
+    margin: 5px 5px 5px 5px;
+    padding: 10px 5px 10px 5px;
+    color: #000;
+    background-color: #d2d2d2;
+}
+
+.card-tags{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    border-bottom: 2px solid #fff;
+    margin-bottom: 15px;
+}
+
+.languages{
+    margin-bottom: 15px;
+    border-bottom: 2px solid  #fff;
+    font-display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
