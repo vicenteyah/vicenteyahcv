@@ -104,3 +104,35 @@
     justify-content: center;
     gap: 10px;
 }
+
+/* Media for ipads */
+
+@media screen and (max-width:890px){
+    .layout-area{
+        display: grid;
+        grid-template-areas:    "sumary"
+                                "skills"
+                                "education";
+    }
+    .sumary,
+    .skills,
+    .education{
+        margin: 5px 2px 5px 8px;
+        padding: 25px;
+    }
+
+    .card-title{
+        font-size: 0.9em;
+        margin-bottom: 10px;
+    }
+    .card-body p{
+        font-size: 0.989rem;
+        margin-bottom: 5px;
+        text-align: justify;
+        line-height : 25px;
+    }
+
+    .experience-layout h1{
+        font-size: 0.9rem;
+    }
+}
