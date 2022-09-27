@@ -10,14 +10,16 @@
     crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/sumary.css">
     <link rel="stylesheet" href="./styles/footer.css">
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <title>Eliud Vicente Yah Dzul</title>
 </head>
 <body>
     <div id="app">
         <header class="appbar-hero">
             <div class="description-content">
-                <h1>Eliud Vicente Yah Dzul</h1>
-                <h2>Software Engineer</h2>
+                <h1>{{ name }}</h1>
+                <h2>{{ degree }}</h2>
            </div>
             <figure class="white-grad" style="--b:8px;--r:50% 0;--c:linear-gradient(140deg,aqua,purple,aqua)">
                 <img src="./images/profile.png" alt="profile">
@@ -27,19 +29,9 @@
                 <span>(+52) 9991071498 </span>
                 <nav>
                     <ul class="social-networks">
-                        <li>
-                            <a href="https://www.linkedin.com/in/eliud-vicente-yah-dzul-7103901bb/" target="_blank">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/vicente.yah" target="_blank">
-                                <i class="fab fa-facebook"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/vicenteyah" target="_blank">
-                                <i class="fab fa-github"></i>
+                        <li v-for="prop in headerProps">
+                            <a :href="prop.path" target="_blank">
+                                <i :class="prop.icon"></i>
                             </a>
                         </li>
                     </ul>
@@ -122,22 +114,9 @@
                     <div card-title>
                         <h1>SKILLS</h1>
                     </div>
+
                     <div class="card-tags">
-                        <span>Docker</span>
-                        <span>Gitflow Workflow</span>
-                        <span>Atomic Design Architechture</span>
-                        <span>Scrum</span>
-                        <span>TypeScript</span>
-                        <span>React/Redux</span>
-                        <span>Nextjs</span>
-                        <span>Nodejs/nest/express</span>
-                        <span>Python/Django</span>
-                        <span>PHP/Laravel</span>
-                        <span>Django rest framework</span>
-                        <span>PostgreSQL</span>
-                        <span>MySQL</span>
-                        <span>Git/GitHub</span>
-                        <span>Vuejs</span>
+                        <span v-for="prop in props">{{ prop.tag }}</span>
                     </div>
 
                     <div class="card-title">
@@ -175,7 +154,7 @@
                 <figure>
                     <img src="./images/logo.svg" alt="logo">
                 </figure>
-                <p>©<span id="year"></span> Eliud Vicente Yah Dzul</p>
+                <p>©{{currentYear}} {{ name }}</p>
             </div>
         </footer>
     </div>
