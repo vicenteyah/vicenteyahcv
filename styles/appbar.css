@@ -86,3 +86,22 @@
     list-style: none;
     color: #fff;
 }
+
+
+
+/*Ipad*/
+@media screen and (max-width: 890px){
+    .appbar-hero{
+        flex-direction: column;
+    }
+}
+
+/* telefono*/
+@media screen and (max-width: 390px){
+    .description-content h2 {
+        font-size: 17px;
+    }
+    .description-content h1{
+        font-size:20px;
+    }
+}
