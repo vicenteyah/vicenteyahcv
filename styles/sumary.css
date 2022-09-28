@@ -124,7 +124,7 @@
 }
 
 /* Media for mobile */
-@media  screen and (max-width: 390px) {
+@media  screen and (max-width: 428px) {
     .card-title{
         font-size: 0.9em;
         margin-bottom: 10px;
