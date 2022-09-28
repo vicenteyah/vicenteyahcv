@@ -94,6 +94,56 @@ createApp({
                     icon: 'fab fa-github',
                     path: 'https://github.com/vicenteyah'
                 }
+            ],
+            languages: [
+                {
+                    id: 1,
+                    name: 'Python/django',
+                    level: '60%',
+                    icon: 'fab fa-python',
+                    color: '#3776AB',
+                    gap: '15px'             
+                },
+                {
+                    id: 2,
+                    name: 'JavaScript',
+                    level: '80%',
+                    icon: 'fab fa-js',
+                    color: '#F7DF1E',
+                    gap: '15px' 
+                },
+                {
+                    id: 3,
+                    name: 'Nodejs/express',
+                    level: '70%',
+                    icon: 'fab fa-node-js',
+                    color: '#339933',
+                    gap: '15px'
+                },
+                {
+                    id: 4,
+                    name: 'React/Nextjs',
+                    level: '80%',
+                    icon: 'fab fa-react',
+                    color: '#61DAFB',
+                    gap: '13px'
+                },
+                {
+                    id: 5,
+                    name: 'Vue',
+                    level: '40%',
+                    icon: 'fab fa-vuejs',
+                    color: '#4FC08D',
+                    gap: '16px' 
+                },
+                {
+                    id: 6,
+                    name: 'PHP',
+                    level: '40%',
+                    icon: 'fab fa-php',
+                    color: '#777BB4',
+                    gap: '7px' 
+                },
             ]
         }
     }

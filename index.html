@@ -11,6 +11,7 @@
       integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./styles/programinglang.css">
     <link rel="stylesheet" href="./styles/sumary.css" />
     <link rel="stylesheet" href="./styles/footer.css" />
     <link rel="icon" href="./images/logo.svg" type="image/svg+xml" />
@@ -146,6 +147,32 @@
           </article>
         </div>
       </section>
+
+      <section class="most-used-lan">
+        <article class="lan-container">
+          <div  class="card-title center">
+            <h1>Most used languages</h1>
+          </div>
+          <div class="status-bars">
+            <div v-for=" props in languages" class="progress-header" :style="{gap:props.gap}">
+              
+              <span>
+                <i :class="props.icon" :style="{color: props.color }"></i>  
+              </span>
+              
+              <div class="progress-bar-linear-wrap">
+                <div class="animated-gradient" :style="{width:props.level}">
+                  <div class="status-height"></div>
+                </div>
+              </div>
+
+              <span>{{props.level}}</span>
+            </div> 
+          </div>
+        </article>
+      </section>
+
+      <!-- Section footer -->
 
       <footer class="footer-cv">
         <div class="footer-content">
