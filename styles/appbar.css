@@ -97,7 +97,7 @@
 }
 
 /* telefono*/
-@media screen and (max-width: 390px){
+@media screen and (max-width: 428px){
     .description-content h2 {
         font-size: 17px;
     }
