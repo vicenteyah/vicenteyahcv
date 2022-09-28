@@ -98,20 +98,21 @@ createApp({
             languages: [
                 {
                     id: 1,
-                    name: 'Python/django',
-                    level: '60%',
-                    icon: 'fab fa-python',
-                    color: '#3776AB',
-                    gap: '15px'             
-                },
-                {
-                    id: 2,
                     name: 'JavaScript',
                     level: '80%',
                     icon: 'fab fa-js',
                     color: '#F7DF1E',
                     gap: '15px' 
                 },
+               
+                {
+                    id: 2,
+                    name: 'React/Nextjs',
+                    level: '80%',
+                    icon: 'fab fa-react',
+                    color: '#61DAFB',
+                    gap: '13px'
+                }, 
                 {
                     id: 3,
                     name: 'Nodejs/express',
@@ -122,11 +123,11 @@ createApp({
                 },
                 {
                     id: 4,
-                    name: 'React/Nextjs',
-                    level: '80%',
-                    icon: 'fab fa-react',
-                    color: '#61DAFB',
-                    gap: '13px'
+                    name: 'Python/django',
+                    level: '60%',
+                    icon: 'fab fa-python',
+                    color: '#3776AB',
+                    gap: '15px'             
                 },
                 {
                     id: 5,
@@ -139,7 +140,7 @@ createApp({
                 {
                     id: 6,
                     name: 'PHP',
-                    level: '40%',
+                    level: '30%',
                     icon: 'fab fa-php',
                     color: '#777BB4',
                     gap: '7px' 
